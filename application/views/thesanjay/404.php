@@ -1,0 +1,16 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+include_once('coredata.php');
+include_once('header.php');
+?>
+	<div class="page-content">
+		<div class="container text-center">
+		  <div class="display-1 text-muted mb-5"><i class="si si-exclamation"></i> 404</div>
+		  <h1 class="h2 mb-3">Oops.. You just found an error page..</h1>
+		  <p class="h4 text-muted font-weight-normal mb-7">We are sorry but our service is currently not available&hellip;</p>
+		  <a class="btn btn-primary" href="<?php echo $siteurl; ?>">
+			<i class="fe fe-arrow-left mr-2"></i>Go back
+		  </a>
+		</div>
+	</div>
+<?php include_once('footer.php'); ?>
