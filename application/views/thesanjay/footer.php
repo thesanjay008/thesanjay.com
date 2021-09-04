@@ -11,7 +11,7 @@
 				</ul>
 			</nav>
 			<div class="right">
-				<a href="http://twitter.com/thesanjay008" class="twitter-follow-button" data-show-count="false" target="_blank">Follow @thesanjay008</a>
+				<a href="https://www.linkedin.com/in/thesanjay008" class="twitter-follow-button" data-show-count="false" target="_blank">Follow @thesanjay008</a>
 			</div>
 		</div>
 	</div>

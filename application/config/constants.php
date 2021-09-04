@@ -87,7 +87,7 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 /* CUSTOM DEFINE */
 //error_reporting(0);
 define ('THEME', 'thesanjay');
-define ('SITEURL', 'https://www.thesanjay.com');
+define ('SITEURL', 'http://localhost/work/thesanjay.com');
 define ('TABLE_PREFIX', 'stc_');
 define ('SITE_PATH', SITEURL);
 define ('FILES_URL', SITEURL .'/media/');
