@@ -1,40 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  
+<!-- Mirrored from nafie.webrouk.com/html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 08 May 2022 10:45:33 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-	<!-- For SEO -->
-	<link rel="shortcut icon" href="https://www.thesanjay.com/libraries/thesanjay/favicon.ico"/>
-	<link rel="manifest" href="manifest.json" />
-    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon.png"/>
-    <link rel="canonical" href="https://www.thesanjay.com"/>
-    
-	<meta name="keywords" content="Sanjay Dhamecha - Product Developer | Entrepreneurs Solution Provider"/>
-    <meta name="description" content=""/>
-	<meta itemprop="name" content="Sanjay Dhamecha - Product Developer | Entrepreneurs Solution Provider"/>
-    <meta itemprop="description" content=""/>
-    <meta itemprop="image" content="assets/images/Sanjay-Dhamecha.jpg"/>
-	
-    <meta name="twitter:card" content="website" />
-    <meta name="twitter:title" content="Sanjay Dhamecha - Product Developer | Entrepreneurs Solution Provider"/>
-    <meta name="twitter:site" content="@thesanjay008"/>
-    <meta name="twitter:description" content=""/>
-    <meta name="twitter:creator" content="@thesanjay008"/>
-    <meta name="twitter:image" content="assets/images/Sanjay-Dhamecha.jpg"/>
-    
-    <meta property="fb:app_id" content="437464563446035"/>
-	<meta property="og:locale" content="en_US"/>
-    <meta property="og:title" content="Sanjay Dhamecha - Product Developer | Entrepreneurs Solution Provider"/>
-    <meta property="og:description" content=""/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://www.thesanjay.com" />
-    <meta property="og:image" content="assets/images/Sanjay-Dhamecha.jpg"/>
-    <meta property="og:site_name" content="Sanjay Dhamecha - Product Developer | Entrepreneurs Solution Provider"/>
-	
+    <meta name="description" content="Nafie develops the best quality website that serves for the long-term. Well-documented, clean, easy and elegant interface helps any non-technical clients.">
+    <meta name="keywords" content="portfolio, agency, business, clean, company, corporate, creative, gallery, rtl, modern, photography, vue, vuejs, responsive, sass">
+
     <!-- title of the browser tab -->
-    <title>Sanjay Dhamecha - Product Developer | Entrepreneurs Solution Provider</title>
+    <title>Nafie - HTML Portfolio Template</title>
 
     <!-- favicon -->
     <link rel="icon" href="assets/favicon.ico">
@@ -79,11 +55,15 @@
         <!-- end preloader-->
 
         <!-- start of header -->
-        <header class="hide-in-preloading" :class="{'big-header': isHeaderBig,'small-header': !isHeaderBig,'header-hidden': isHeaderHidden}">
+        <header class="hide-in-preloading" :class="{
+          'big-header': isHeaderBig,
+          'small-header': !isHeaderBig,
+          'header-hidden': isHeaderHidden
+        }">
           <div class="container">
             <!-- logo -->
             <div class="logo" title="Nafie">
-              <h1><a href="">Sanjay Dhamecha</a></h1>
+              <h1><a href="index.html">Nafie</a></h1>
             </div>
 
             <!-- nav links -->
@@ -117,14 +97,25 @@
                     <li class="col-lg-4">
                       <h4 class="block-title">Email</h4>
                       <ul>
-                        <li><a href="mailto:mail@thesanjay.com">mail@thesanjay.com</a></li>
-                        <li><a href="mailto:sanjay@codefencers.com">sanjay@codefencers.com</a></li>
+                        <li><a href="mailto:info@nafie.com">info@nafie.com</a></li>
+                        <li><a href="mailto:support@nafie.com">support@nafie.com</a></li>
+                      </ul>
+                    </li>
+                    <li class="col-lg-4">
+                      <h4 class="block-title">Address</h4>
+                      <ul>
+                        <li>
+                          941 saqrqorish Road, alandalos,
+                          <br>
+                          grnata, wa 47122-4194
+                        </li>
                       </ul>
                     </li>
                     <li class="col-lg-4">
                       <h4 class="block-title">Phone</h4>
                       <ul>
-                        <li><a href="tel:+918347519769">(+91) 83475 19769</a></li>
+                        <li><a href="tel:02966202290">(02) 966 202 290</a></li>
+                        <li><a href="tel:02966202291">(02) 966 202 291</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -136,7 +127,7 @@
             <ul class="options-icons">
 
               <!-- lang switcher button -->
-              <!--<li class="lang-switcher">
+              <li class="lang-switcher">
                 <ul class="lang-switcher-menu">
                   <li class="menu-item menu-item-has-children">
                     <a href="#">En</a>
@@ -151,7 +142,7 @@
                     </ul>
                   </li>
                 </ul>
-              </li>-->
+              </li>
 
               <!-- theme switcher button -->
               <li class="theme-switcher">
@@ -160,7 +151,10 @@
 
               <!-- hamburger button -->
               <li class="hamburger-btn" :class="{'open': isNavMenuOpen}">
-                <button @click="toggleNavMenu" title="Toggle Side Menu" aria-label="Toggle Side Menu" ref="navMenuToggleBtn">
+                <button @click="toggleNavMenu"
+                  title="Toggle Side Menu"
+                  aria-label="Toggle Side Menu"
+                  ref="navMenuToggleBtn">
                   <span></span>
                   <span></span>
                   <span></span>
@@ -183,20 +177,30 @@
           </div>
 
           <div class="hero-text">
-            <h2>Web Developer & Build<br>Creative Products</h2>
+            <h2>
+              We Design & Build
+              <br>
+              Creative Products
+            </h2>
             <a href="#contact" class="btn">Get In Touch</a>
           </div>
 
           <div class="social">
             <ul>
-			  <li>
-                <a href="https://linkedin.com/in/thesanjay008" target="_blank" rel="noreferrer" v-tooltip="{text: 'LinkedIn', dir: 'right'}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              </li>
-			  <li>
-                <a href="https://www.twitter.com/thesanjay008" target="_blank" rel="noreferrer" v-tooltip="{text: 'Twitter', dir: 'right'}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <li>
+                <a href="#" target="_blank" rel="noreferrer" v-tooltip="{text: 'Facebook', dir: 'right'}">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/thesanjay008" target="_blank" rel="noreferrer" v-tooltip="{text: 'Instagram', dir: 'right'}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#" target="_blank" rel="noreferrer" v-tooltip="{text: 'Twitter', dir: 'right'}">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noreferrer" v-tooltip="{text: 'LinkedIn', dir: 'right'}">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
               </li>
             </ul>
           </div>
@@ -218,7 +222,7 @@
                       <img src="assets/images/icons/emblem.png" alt="Years of Experience">
                     </div>
                     <div class="text">
-                      <h3>7+</h3>
+                      <h3>{{ experienceYears }}+</h3>
                       <strong>Years of Experience</strong>
                     </div>
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -230,7 +234,7 @@
                       <img src="assets/images/icons/check-mark.png" alt="Completed Projects">
                     </div>
                     <div class="text">
-                      <h3>120+</h3>
+                      <h3>230+</h3>
                       <strong>Completed Projects</strong>
                     </div>
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -242,7 +246,7 @@
                       <img src="assets/images/icons/happy.png" alt="Happy Clients">
                     </div>
                     <div class="text">
-                      <h3>50+</h3>
+                      <h3>95+</h3>
                       <strong>Happy Clients</strong>
                     </div>
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -270,9 +274,13 @@
               <div class="about-text col-lg-6">
                 <div class="text-box-inline">
                   <span class="subtitle">about me</span>
-                  <h2>Need a Creative Product?<br>I can Help You!</h2>
+                  <h2>
+                    Need a Creative Product?
+                    <br>
+                    I can Help You!
+                  </h2>
                   <p>
-                    Hi! I’m Sanjay Dhamecha, and I’m a developer who has passion for building clean web applications with intuitive functionality. I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have worked with creative teams, which involves daily stand-ups and communications, source control, and project management.
+                    Hi! I’m Muhammad Mabrouk, and I’m a developer who has passion for building clean web applications with intuitive functionality. I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have worked with creative teams, which involves daily stand-ups and communications, source control, and project management.
                   </p>
                   <div class="btns-container">
                     <a href="#contact" class="btn btn-primary">Hire Me</a>
@@ -380,9 +388,13 @@
               <div class="experience-text col-lg-6">
                 <div class="text-box-inline">
                   <span class="subtitle">experience</span>
-                  <h2>7+ Years of Experience<br>With Many Products Development</h2>
+                  <h2>
+                    {{ experienceYears }}+ Years of Experience
+                    <br>
+                    With Many Awards!
+                  </h2>
                   <p>
-                    I have been developing sites and apps for 7 years and i know for sure the main trends and directions of modern design, I have been a visionary and a reliable software engineering partner for world-class brands. You will get a decent result as you expect.
+                    I have been developing sites and apps for {{ experienceYears }} years and i know for sure the main trends and directions of modern design, I have been a visionary and a reliable software engineering partner for world-class brands. You will get a decent result as you expect.
                   </p>
                 </div>
               </div>
@@ -402,7 +414,11 @@
                   <!-- text box -->
                   <div class="text-box-inline">
                     <span class="subtitle">my works</span>
-                    <h2>See My Works Which<br>Will Amaze You!</h2>
+                    <h2>
+                      See My Works Which
+                      <br>
+                      Will Amaze You!
+                    </h2>
                     <p>
                       We develop the best quality website that serves for the long-term. Well-documented, clean, easy and elegant interface helps any non-technical clients.
                     </p>
@@ -500,11 +516,19 @@
                 <!-- contact info -->
                 <ul class="contact-info">
                   <li>
+                    <img src="assets/images/icons/address.png" alt="Address">
+                    <div>
+                      <strong>Address:</strong>
+                      941 Saqrqorish Road, alandalos, grnata, wa 47122-4194
+                    </div>
+                  </li>
+                  <li>
                     <img src="assets/images/icons/phone.png" alt="Phone">
                     <div>
                       <strong>Phone:</strong>
                       <ul>
-                        <li><a href="tel:+918347519769" class="ltr-dir">(+91) 83475 19769</a></li>
+                        <li><a href="tel:02966202290" class="ltr-dir">(02) 966 202 290</a></li>
+                        <li><a href="tel:02966202291" class="ltr-dir">(02) 966 202 291</a></li>
                       </ul>
                     </div>
                   </li>
@@ -513,8 +537,8 @@
                     <div>
                       <strong>Email:</strong>
                       <ul>
-                        <li><a href="mailto:mail@thesanjay.com">mail@thesanjay.com</a></li>
-                        <li><a href="mailto:sanjay@codefencers.com">sanjay@codefencers.com</a></li>
+                        <li><a href="mailto:info@nafie.com">info@nafie.com</a></li>
+                        <li><a href="mailto:support@nafie.com">support@nafie.com</a></li>
                       </ul>
                     </div>
                   </li>
@@ -522,28 +546,44 @@
 
                 <!-- social links -->
                 <ul class="social">
-				  <li>
-                    <a href="https://linkedin.com/in/thesanjay008" target="_blank" rel="noreferrer" v-tooltip="{text: 'LinkedIn', dir: 'top'}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  <li>
+                    <a href="#" target="_blank" rel="noreferrer" v-tooltip="{text: 'Facebook', dir: 'top'}">
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
                   </li>
                   <li>
-                    <a href="https://www.twitter.com/thesanjay008" target="_blank" rel="noreferrer" v-tooltip="{text: 'Twitter', dir: 'top'}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" target="_blank" rel="noreferrer" v-tooltip="{text: 'Twitter', dir: 'top'}">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/thesanjay008" target="_blank" rel="noreferrer" v-tooltip="{text: 'Instagram', dir: 'top'}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" target="_blank" rel="noreferrer" v-tooltip="{text: 'LinkedIn', dir: 'top'}">
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
                   </li>
                   <li>
-                    <a href="https://www.youtube.com/c/SanjayDhamecha" target="_blank" rel="noreferrer" v-tooltip="{text: 'YouTube', dir: 'top'}"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href="#" target="_blank" rel="noreferrer" v-tooltip="{text: 'YouTube', dir: 'top'}">
+                      <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </a>
                   </li>
                 </ul>
               </div>
 
               <!-- contact form -->
               <div class="col-lg-6">
-                <form ref="contactForm" class="contact-form form-styled" action="javasceipt:void(0);" data-success-msg="Message sent successfully!" data-err-msg="Oops! something went wrong, please try again.">
+                <form ref="contactForm"
+                  class="contact-form form-styled"
+                  action="https://nafie.webrouk.com/html/contact_form.php"
+                  data-success-msg="Message sent successfully!"
+                  data-err-msg="Oops! something went wrong, please try again.">
                   <div class="group">
                     <label>Name</label>
                     <div class="control has-prefix-icon">
-                      <input type="text" name="name" placeholder="e.g. John Doe" minlength="3" required>
+                      <input type="text"
+                        name="name"
+                        placeholder="e.g. John Doe"
+                        minlength="3"
+                        required>
                       <i class="fa fa-user-circle prefix-icon" aria-hidden="true"></i>
 
                       <!-- validation errors messages -->
@@ -556,7 +596,12 @@
                   <div class="group">
                     <label>Email</label>
                     <div class="control has-prefix-icon">
-                      <input class="ltr-dir" type="email" inputmode="email" name="email" placeholder="e.g. john.doe@gmail.com" required>
+                      <input class="ltr-dir"
+                        type="email"
+                        inputmode="email"
+                        name="email"
+                        placeholder="e.g. john.doe@gmail.com"
+                        required>
                       <i class="fa fa-envelope prefix-icon" aria-hidden="true"></i>
 
                       <!-- validation errors messages -->
@@ -569,7 +614,10 @@
                   <div class="group phone-number">
                     <label>Phone <span class="optional">(Optional)</span></label>
                     <div class="control has-prefix-icon">
-                      <input type="tel" inputmode="tel" name="phone" placeholder="Phone Number">
+                      <input type="tel"
+                        inputmode="tel"
+                        name="phone"
+                        placeholder="Phone Number">
                       <i class="fa fa-phone prefix-icon" aria-hidden="true"></i>
 
                       <!-- validation errors messages -->
@@ -607,11 +655,14 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-6">
-                &copy; {{ copyrightDate }} Sanjay Dhamecha
+                <!-- logo -->
+                <div class="logo" title="Nafie">
+                  <h1><a href="index.html">Nafie</a></h1>
+                </div>
               </div>
               <div class="col-lg-6">
-                &copy; Follow
-                <a href="https://www.linkedin.com/in/thesanjay008/" target="_blank" rel="noopener">@thesanjay008</a>
+                &copy; {{ copyrightDate }} Proudly Powered by
+                <a href="https://themeforest.net/user/webrouk/portfolio" target="_blank" rel="noopener">Webrouk</a>
               </div>
             </div>
           </div>
@@ -619,8 +670,13 @@
         <!-- end of footer -->
 
         <!-- scroll to top button -->
-        <button class="scroll-to-top" ref="scrollTopBtn" title="Back To Top" data-show-at="50" @click="scrollToTop">
-          <svg width="100%" height="100%" viewBox="-1 -1 102 102"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" /></svg>
+        <button class="scroll-to-top" ref="scrollTopBtn"
+          title="Back To Top"
+          data-show-at="50"
+          @click="scrollToTop">
+          <svg width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+          </svg>
         </button>
 
         <!-- toast notifications -->
@@ -629,10 +685,13 @@
             <li v-for="notify of notifications"
               :key="notify.id"
               :id="notify.id"
-              :class="['notification', 'show', notify.className, notify.time && 'timer']">
+              :class="['notification', 'show', notify.className, notify.time && 'timer']"
+            >
               {{ notify.msg }}
               <i class="fa fa-times link-hover" aria-hidden="true" @click="dismissNotify(notify.id)"></i>
-              <span v-if="notify.time" class="disappearing-time" :style="{ 'animation-duration': notify.time + 'ms' }"></span>
+              <span v-if="notify.time"
+                class="disappearing-time"
+                :style="{ 'animation-duration': notify.time + 'ms' }"></span>
             </li>
           </transition-group>
         </ul>
@@ -650,4 +709,6 @@
     <!-- main script file -->
     <script src="scripts/main.min.js"></script>
   </body>
+
+<!-- Mirrored from nafie.webrouk.com/html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 08 May 2022 10:45:38 GMT -->
 </html>
